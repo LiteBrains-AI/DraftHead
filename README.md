@@ -8,6 +8,8 @@ DraftHead is an experimental transformer augmentation that introduces a lightwei
 
 Instead of using only the traditional projection DraftHead represents a trainable importance-aware component designed to influence feature representations with minimal architectural changes.
 
+Generate several possible thoughts, estimate confidence for each thought, and let attention naturally reinforce high-confidence fragments while suppressing weak ones.
+
 The project is inspired by recent developments in efficient reasoning, drafting mechanisms, and transformer optimization research.
 
 ## Motivation
