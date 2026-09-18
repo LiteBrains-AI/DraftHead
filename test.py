@@ -278,3 +278,9 @@ for epoch in range(EPOCHS):
         f"Test Acc: {test_acc:.2f}%"
     )
 
+# Train Accuracy is ~ 98%. Model is clearly overfitting!
+# Test Accuracy is ~ 66% only. 
+
+# Open question: DraftHead assigns confidence scores to intermediate drafts. However, confidence is learned implicitly through task loss and may not correspond to actual correctness.
+
+# Need farther research 
