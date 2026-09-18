@@ -110,6 +110,16 @@ The architecture intentionally prioritizes concept exploration over efficiency o
 
 Future work may investigate pruning and compression strategies, but they are outside the scope of this demonstration project.
 
+## Community Use
+This repository is provided as a **reference implementation** of DraftHead.  
+If you’d like to extend or experiment with the concept, please **fork** the repo and build your own models on top of it.
+
+Pull requests are not the main focus here — the idea is for you to create your own projects inspired by DraftHead, while keeping the license and credit intact.
+
+## Feedback & Questions
+If you have ideas, questions, or feedback about DraftHead, feel free to open an **issue** or start a **discussion**.  
+I’m happy to hear how you’re applying or extending the concept.
+
 ## Disclaimer
 
 DraftHead is an experimental demonstration project.
@@ -118,4 +128,7 @@ The concepts implemented in this repository are exploratory research ideas and s
 
 > "Small modifications can lead to interesting questions. DraftHead exists to explore those questions."
 
-Thanks for visiting! 🐱
+## License
+DraftHead is licensed under the Apache License 2.0
+
+> *Thanks for visiting!* 🐱
