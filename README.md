@@ -87,6 +87,17 @@ DraftHead does not claim:
 
 **Any performance benefits observed should be considered preliminary until validated through rigorous experimentation.**
 
+## Limitations
+
+DraftHead increases intermediate draft representations,
+which can increase memory usage and context processing costs.
+
+The architecture intentionally prioritizes concept exploration
+over efficiency optimization.
+
+Future work may investigate pruning and compression strategies,
+but they are outside the scope of this demonstration project.
+
 ## Disclaimer
 
 DraftHead is an experimental demonstration project.
