@@ -1,4 +1,5 @@
 # DraftHead
+DraftHead is an experimental transformer architecture that generates multiple confidence-scored draft representations and uses attention to select, suppress, and refine them into a final prediction.
 
 Exploring importance-weighted draft biases for transformer architectures.
 
