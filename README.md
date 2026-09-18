@@ -13,6 +13,20 @@ Generate several possible thoughts, estimate confidence for each thought, and le
 
 The project is inspired by recent developments in efficient reasoning, drafting mechanisms, and transformer optimization research.
 
+## Design Philosophy
+DraftHead is intentionally implemented as an attachable module rather than a modification of the attention mechanism itself.
+
+This allows researchers to evaluate the concept in isolation and experiment with alternative placements.
+
+> Version: v0.1-alpha
+
+### Future directions:
+
+- ✨ In-attention DraftHead
+- ✨ Draft-aware Value projections
+- ✨ Draft-aware KV caches
+- ✨ Multi-stage drafting
+
 ## Motivation
 
 Modern transformer architectures rely heavily on large projection matrices to encode information.
@@ -90,14 +104,11 @@ DraftHead does not claim:
 
 ## Limitations
 
-DraftHead increases intermediate draft representations,
-which can increase memory usage and context processing costs.
+DraftHead increases intermediate draft representations, which can increase memory usage and context processing costs.
 
-The architecture intentionally prioritizes concept exploration
-over efficiency optimization.
+The architecture intentionally prioritizes concept exploration over efficiency optimization.
 
-Future work may investigate pruning and compression strategies,
-but they are outside the scope of this demonstration project.
+Future work may investigate pruning and compression strategies, but they are outside the scope of this demonstration project.
 
 ## Disclaimer
 
@@ -105,4 +116,6 @@ DraftHead is an experimental demonstration project.
 
 The concepts implemented in this repository are exploratory research ideas and should not be interpreted as validated improvements over existing transformer architectures. The primary purpose of this project is educational, experimental, and community-driven exploration.
 
-"Small modifications can lead to interesting questions. DraftHead exists to explore those questions."
+> "Small modifications can lead to interesting questions. DraftHead exists to explore those questions."
+
+Thanks for visiting! 🐱
