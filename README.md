@@ -131,4 +131,4 @@ The concepts implemented in this repository are exploratory research ideas and s
 ## License
 DraftHead is licensed under the Apache License 2.0
 
-> *Thanks for visiting!* 🐱
+> **Thanks for visiting!** 🐱
