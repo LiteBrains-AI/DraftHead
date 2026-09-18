@@ -89,3 +89,21 @@ class DraftHead(nn.Module):
         output = self.output_proj(fused)
 
         return output, confidences
+
+# Demo
+
+x = torch.randn(
+    2,      # batch
+    16,     # sequence length
+    128,    # hidden size
+)
+
+layer = DraftHead(
+    hidden_size=128,
+    num_drafts=4,
+)
+
+output, confidence = layer(x)
+
+print(output.shape)
+print(confidence.shape)
