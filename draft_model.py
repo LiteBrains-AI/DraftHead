@@ -9,7 +9,7 @@ class TransformerBlock(nn.Module):
     def __init__(
         self,
         hidden_size=128,
-        num_heads=8,
+        num_heads=4,
         num_drafts=4,
         ff_dim=256,
     ):
@@ -66,7 +66,7 @@ class DraftHeadModel(nn.Module):
         vocab_size,
         hidden_size=128,
         num_layers=4,
-        num_heads=8,
+        num_heads=4,
         num_drafts=4,
         max_length=256,
     ):
