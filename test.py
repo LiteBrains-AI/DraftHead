@@ -145,7 +145,7 @@ model = DraftHeadModel(
     hidden_size=128,
     num_layers=4,
     num_heads=4,
-    num_drafts=1,
+    num_drafts=16,
     max_length=MAX_LEN,
 ).to(device)
 
@@ -279,8 +279,8 @@ for epoch in range(EPOCHS):
     )
 
 # Train Accuracy is ~ 98%. Model is clearly overfitting!
-# Test Accuracy is ~ 66% only. 
+# Test Accuracy is ~ 66% only. (1 drafts)
+# Test Accuracy is ~ 63% only. (4 drafts)
+# Test Accuracy is ~ 73% (16 drafts)
 
 # Open question: DraftHead assigns confidence scores to intermediate drafts. However, confidence is learned implicitly through task loss and may not correspond to actual correctness.
-
-# Need farther research 
