@@ -282,5 +282,6 @@ for epoch in range(EPOCHS):
 # Test Accuracy is ~ 66% only. (1 drafts)
 # Test Accuracy is ~ 63% only. (4 drafts)
 # Test Accuracy is ~ 73% (16 drafts)
+# ✅ Reason found: Model is overfitting for fewer samples, so Generalization is weak!
 
 # Open question: DraftHead assigns confidence scores to intermediate drafts. However, confidence is learned implicitly through task loss and may not correspond to actual correctness.
