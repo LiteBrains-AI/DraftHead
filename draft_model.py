@@ -2,7 +2,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from draft_head import DraftHead
+from draft_head import DraftHead 
+# from draft_head2 import DraftHead [comment out to use]
 
 
 class TransformerBlock(nn.Module):
