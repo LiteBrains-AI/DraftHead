@@ -24,11 +24,11 @@ test_data: Dataset = dataset["test"]
 # --- Hyperparameters --- 
 
 
-NUM_TRAIN_SAMPLES = 4000   # None = use full training set
+NUM_TRAIN_SAMPLES = 40000   # None = use full training set
 NUM_TEST_SAMPLES  = 2000    # None = use full test set
 
-BATCH_SIZE = 40
-MAX_LEN = 50
+BATCH_SIZE = 100
+MAX_LEN = 40
 
 # Select number of samples
 
@@ -145,7 +145,7 @@ model = DraftHeadModel(
     hidden_size=128,
     num_layers=4,
     num_heads=4,
-    num_drafts=16,
+    num_drafts=4,
     max_length=MAX_LEN,
 ).to(device)
 
@@ -283,5 +283,9 @@ for epoch in range(EPOCHS):
 # Test Accuracy is ~ 63% only. (4 drafts)
 # Test Accuracy is ~ 73% (16 drafts)
 # ✅ Reason found: Model is overfitting for fewer samples, So, generalization is weak!
+
+# After train with 40K samples (and draft_head2)
+# Train Accuracy is ~ 98%. Model is still overfitting!
+# Test Accuracy is ~ 85%. (4 drafts)
 
 # Open question: DraftHead assigns confidence scores to intermediate drafts. However, confidence is learned implicitly through task loss and may not correspond to actual correctness.
